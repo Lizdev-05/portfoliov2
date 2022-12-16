@@ -113,3 +113,25 @@ img{
   width: 100%;
   object-fit: cover;
 }
+
+/* ===============================  MEDIA QUERY (MEDIUM DEVICES) ========================== */
+@media screen and (max-width: 1024px) {
+  .container{
+    width: var(--container-width-md);
+  }
+
+  .section{
+    margin-top: 6rem;
+  }
+}
+
+/* ===============================  MEDIA QUERY (SMALL DEVICES) ========================== */
+@media screen and (max-width: 600px) {
+  .container{
+    width: var(--container-width-small);
+  }
+
+  .section > h2{
+    margin-bottom: 2rem;
+  }
+}
