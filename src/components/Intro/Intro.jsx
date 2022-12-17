@@ -26,15 +26,10 @@ const Intro = () => (
             </div>
           ))
         }
-      <Link to="/contact">
-        <button
-          type="button"
-          className="bg-lightBlueColor mt-10 rounded px-6 py-2 w-50
-      text-lg text-skyColor font-medium hover:bg-secondaryColor hover:text-primaryColor"
-        >
+        <a href="/contact" className="btn btn-primary btn:hover mt-10 rounded px-6 py-2 w-50
+          text-lg font-medium"> 
           Get in Touch
-        </button>
-      </Link>
+       </a>
       </div>
       </motion.div>
 );

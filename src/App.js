@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <Nav />
-      <div className="inner-body">
+      <div className="">
         <Routes>
           {/* <Route
             path="*"
@@ -23,7 +23,7 @@ function App() {
             path="/"
             element={(<Home />)}
           />
-          
+
           <Route
             path="/about"
             element={(<About />)}

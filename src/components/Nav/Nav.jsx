@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { MenuIcon, XIcon } from '@heroicons/react/solid';
 import { Link } from 'react-router-dom';
+import CV from '../../assets/images/resume.pdf'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
@@ -79,16 +80,16 @@ const Nav = () => {
           </ul>
         </div>
       </nav>
-      <Link to="/resume" className={`self-center ${mobileMenu ? 'block' : 'hidden'} md:block`}>
-        <button
+      <a href={CV} download className={`self-center ${mobileMenu ? 'block' : 'hidden'} md:block btn:hover btn-primary`}>
+      <button
           onClick={() => setMobileMenu(false)}
           type="button"
           className={`border-2 border-secondaryColor mt-24 rounded px-4 py-1 w-32 
-      text-secondaryColor hover:text-skyColor hover:border-skyColor md:mt-0`}
+         text-secondaryColor hover:text-skyColor hover:border-skyColor md:mt-0`}
         >
           Resume
         </button>
-      </Link>
+      </a>
     </header>
   );
 };
