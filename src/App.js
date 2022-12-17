@@ -1,29 +1,30 @@
 import React from 'react';
 import { Routes, Route } from 'react-router';
 import Nav from './components/Nav/Nav';
-// import Home from './components/Home/Home';
+import Home from './components/Home/Home';
 import About from './components/About/About';
 import Skills from './components/Skills/Skills';
 import Projects from './components/Projects/Projects';
 import Testimonial from './components/Testimonials/Testimonial';
 import Contact from './components/Contact/Contact';
-// import Footer from './components/Footer/Footer';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
     <>
       <Nav />
       <div className="inner-body">
-        {/* <Routes> */}
+        <Routes>
           {/* <Route
             path="*"
             element={(<NotFound />)}
           /> */}
-          {/* <Route
+          <Route
             path="/"
             element={(<Home />)}
-          /> */}
-          {/* <Route
+          />
+          
+          <Route
             path="/about"
             element={(<About />)}
           />
@@ -43,7 +44,7 @@ function App() {
             path="/testimonials"
             element={(<Testimonial />)}
           />
-        </Routes> */}
+        </Routes>
       </div>
     </>
   );
