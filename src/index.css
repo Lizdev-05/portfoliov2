@@ -10,40 +10,37 @@
   text-decoration: none;
 }
 
-:root{
-  --color-bg: #1f1f38;
+:root {
+  --color-bg: #012a4a;
   --color-bg-variant: #2c2c6c;
   --color-primary: #4db5ff;
   --color-primary-variant: rgba(77, 181, 255, 0.4);
-  --color-white: #fff;
+  --color-white: #f9f9f9;
   --color-light: rgba(255, 255, 255, 0.6);
-
   --transition: all 400ms ease;
-
   --container-width-lg: 75%;
   --container-width-md: 86%;
   --container-width-small: 90%;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   display: none;
 }
 
-body{
+body {
   font-family: 'Poppins', sans-serif;
   background: var(--color-bg);
   color: var(--color-white);
   line-height: 1.7;
-  
 }
 
 
 /* --------------  GENERAL STYLES   ---------------- */
-.container{
+.container {
   width: var(--container-width-lg);
   margin: 0 auto;
 }
@@ -52,43 +49,43 @@ h1,
 h2,
 h3,
 h4,
-h5{
+h5 {
   font-weight: 500;
 }
 
-h1{
+h1 {
   font-size: 2.5rem;
 }
 
-section{
-  margin-top:  8rem;
+section {
+  margin-top: 8rem;
 }
 
-section > h2, section > h5 {
- text-align: center;
- color: var(--color-light);
+section > h2,
+section > h5 {
+  text-align: center;
+  color: var(--color-light);
 }
-
 
 section > h2 {
   color: var(--color-primary);
   margin-bottom: 3rem;
 }
 
-.text-light{
+.text-light {
   color: var(--color-light);
 }
 
-a{
+a {
   color: var(--color-primary);
   transition: var(--transition);
 }
 
-a:hover{
+a:hover {
   color: var(--color-white);
 }
 
-.btn{
+.btn {
   width: max-content;
   display: inline-block;
   color: var(--color-primary);
@@ -97,18 +94,19 @@ a:hover{
   border: 1px solid var(--color-primary);
   transition: var(--transition);
 }
-.btn:hover{
+
+.btn:hover {
   background-color: var(--color-white);
   color: var(--color-bg);
   border-color: transparent;
 }
 
-.btn-primary{
+.btn-primary {
   background: var(--color-primary);
   color: var(--color-bg);
 }
 
-img{
+img {
   display: block;
   width: 100%;
   object-fit: cover;
@@ -116,22 +114,26 @@ img{
 
 /* ===============================  MEDIA QUERY (MEDIUM DEVICES) ========================== */
 @media screen and (max-width: 1024px) {
-  .container{
+  .container {
     width: var(--container-width-md);
   }
 
-  .section{
+  .section {
     margin-top: 6rem;
+  }
+
+  .inner-body {
+    padding-left: 200px;
   }
 }
 
 /* ===============================  MEDIA QUERY (SMALL DEVICES) ========================== */
 @media screen and (max-width: 600px) {
-  .container{
+  .container {
     width: var(--container-width-small);
   }
 
-  .section > h2{
+  .section > h2 {
     margin-bottom: 2rem;
   }
 }
