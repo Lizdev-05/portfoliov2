@@ -1,6 +1,6 @@
 .header_socials{
     position: absolute;
-    right: -3rem;
+    right: 6rem;
     bottom: 7rem;
     font-size: 2rem;
     display: flex;
@@ -11,10 +11,10 @@
 /* ===============================  MEDIA QUERY (SMALL DEVICES) ========================== */
 @media screen and (max-width: 800px) {
     .header_socials{
-        display: flex;
-    flex-direction: column;
+        display: none;
+    /* flex-direction: column;
         gap: 0.8rem;
-        right: 1rem;
+        right: 1rem; */
     }
   }
   

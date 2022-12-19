@@ -1,11 +1,12 @@
 import React from 'react'
 import Intro from '../Intro/Intro'
+import './Home.css'
 
 const Home = () => {
   return (
-    <div className="container">
+    <section className='inner'>
       <Intro />
-    </div>
+    </section>
   )
 }
 

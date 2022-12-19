@@ -1,36 +1,39 @@
 import React, { useState } from 'react';
 import { MenuIcon, XIcon } from '@heroicons/react/solid';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+// import { Routes, Route } from 'react-router';
 import CV from '../../assets/images/resume.pdf'
+import './Nav.css'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
-const menuItems = [
-  { name: 'Home', path: '/', current: true },
-  { name: 'About', path: '#about', current: false },
-  { name: 'Projects', path: '#projects', current: false },
-  { name: 'Contact', path: '#contact', current: false },
-  { name: 'Blog', path: '#blog', current: false },
-  { name: 'Testimonials', path: '#testimonials', current: false },
-];
+// const menuItems = [
+//   { name: 'Home', path: '/', current: true },
+//   { name: 'About', path: '#about', current: false },
+//   { name: 'Projects', path: '#projects', current: false },
+//   { name: 'Contact', path: '#contact', current: false },
+//   { name: 'Blog', path: '#blog', current: false },
+//   { name: 'Testimonials', path: '#testimonials', current: false },
+// ];
 
 const Nav = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
-  const [status, setStatus] = useState(true);
+  const [activeNav, setActivenav] = useState('#')
+  // const [status, setStatus] = useState(true);
 
-  const changeCurrentStatus = (name) => {
-    for (let i = 0; i < menuItems.length; i += 1) {
-      if (menuItems[i].name === name) {
-        menuItems[i].current = true;
-      } else {
-        menuItems[i].current = false;
-      }
-    }
-    setStatus(!status);
-    setMobileMenu(false);
-  };
+  // const changeCurrentStatus = (name) => {
+  //   for (let i = 0; i < menuItems.length; i += 1) {
+  //     if (menuItems[i].name === name) {
+  //       menuItems[i].current = true;
+  //     } else {
+  //       menuItems[i].current = false;
+  //     }
+  //   }
+  //   setStatus(!status);
+  //   setMobileMenu(false);
+  // };
 
   return (
     <nav
@@ -56,8 +59,20 @@ const Nav = () => {
         </div>
         <div className={classNames(mobileMenu ? 'block' : 'hidden', 'md:block')}>
           <ul className="flex flex-col gap-8 items-center mt-24 md:flex-row md:mt-1">
+            <li><a href="#" onClick={() => setActivenav('#')} className={activeNav === '#' ? 'active' : ''}>Home</a></li>
+            <li><a href="#about"  onClick={() => setActivenav('#about')} className={activeNav === '#about' ? 'active' : ''}>About</a></li>
+            <li><a href="#project"  onClick={() => setActivenav('#project')} className={activeNav === '#project' ? 'active' : ''}>Project</a></li>
+            <li><a href="#contact"  onClick={() => setActivenav('#contact')} className={activeNav === '#contact' ? 'active' : ''}>Contact</a></li>
+            <li><a href="#blog"  onClick={() => setActivenav('#blog')} className={activeNav === '#blog' ? 'active' : ''}>Blog</a></li>
+            <li><a href="#testimonial"  onClick={() => setActivenav('#testimonial')} className={activeNav === '#testimonial' ? 'active' : ''}>Testimonial</a></li>
+
+
+
+            {/* <Routes>
             {
               menuItems.map((item) => (
+             
+                <Route>
                 <li key={item.name}>
                   <Link to={item.path}>
                     <a
@@ -75,8 +90,10 @@ const Nav = () => {
                     </a>
                     </Link>
                 </li>
+                </Route>
               ))
             }
+            </Routes> */}
           </ul>
         </div>
       </nav>
