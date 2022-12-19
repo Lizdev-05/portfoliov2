@@ -1,13 +1,20 @@
 .header_socials{
     position: absolute;
-    right: 6rem;
+    right: 7rem;
     bottom: 7rem;
-    font-size: 2rem;
+    /* font-size: 2rem; */
     display: flex;
     flex-direction: column;
     gap: 1rem;
 
 }
+
+/* .header_socials::after{
+    content: '';
+    width: 22px;
+    height: 2rem;
+    background: var(--color-primary);
+} */
 /* ===============================  MEDIA QUERY (SMALL DEVICES) ========================== */
 @media screen and (max-width: 800px) {
     .header_socials{
