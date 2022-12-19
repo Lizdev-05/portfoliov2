@@ -77,6 +77,13 @@ section > h2 {
   color: var(--color-light);
 }
 
+.text-white{
+  color: var(--color-white);
+}
+.text-color{
+  color: var(--color-primary);
+  transition: var(--transition);
+}
 a {
   color: var(--color-primary);
   transition: var(--transition);
@@ -113,6 +120,15 @@ img {
   object-fit: cover;
 }
 
+.bg{
+  background: var(--color-bg);
+}
+/* .mobile{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: inherit;
+} */
+
 /* ===============================  MEDIA QUERY (MEDIUM DEVICES) ========================== */
 @media screen and (max-width: 1024px) {
   .container {
@@ -121,10 +137,6 @@ img {
 
   .section {
     margin-top: 6rem;
-  }
-
-  .inner-body {
-    padding-left: 200px;
   }
 }
 

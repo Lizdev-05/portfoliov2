@@ -9,11 +9,11 @@ function classNames(...classes) {
 
 const menuItems = [
   { name: 'Home', path: '/', current: true },
-  { name: 'About', path: '/about', current: false },
-  { name: 'Projects', path: '/projects', current: false },
-  { name: 'Contact', path: '/contact', current: false },
-  { name: 'Blog', path: '/blog', current: false },
-  { name: 'Testimonials', path: '/testimonials', current: false },
+  { name: 'About', path: '#about', current: false },
+  { name: 'Projects', path: '#projects', current: false },
+  { name: 'Contact', path: '#contact', current: false },
+  { name: 'Blog', path: '#blog', current: false },
+  { name: 'Testimonials', path: '#testimonials', current: false },
 ];
 
 const Nav = () => {
@@ -33,16 +33,16 @@ const Nav = () => {
   };
 
   return (
-    <header
-      className={`flex flex-col z-10  bg-primaryColor px-8 py-7 ${mobileMenu ? 'h-screen' : 'h-fit'} fixed top-0 w-full shadow-xl md:flex-row md:justify-between md:px-20 md:h-fit`}
+    <nav
+    className={`bg flex flex-col z-10 px-8 py-7 ${mobileMenu ? 'h-screen ' : 'h-fit'} fixed top-0 w-full shadow-xl md:flex-row md:justify-between md:px-20 md:h-fit`}
     >
-      <a href="/" className="text-xl">
-        <span className="text-secondaryColor">Li</span>
-        <span>z</span>
-        <span className="text-secondaryColor">dev</span>
+
+      <a className="text-xl">
+        <span className="">Liz</span>
+        <span className="text-white">dev</span>
       </a>
       <nav>
-        <div className="text-secondaryColor md:hidden mobile-btns">
+        <div className=" md:hidden mobile-btns">
           <button
             type="button"
             className={classNames(!mobileMenu ? 'block' : 'hidden')}
@@ -65,9 +65,9 @@ const Nav = () => {
                       href={item.path}
                       className={classNames(
                         item.current
-                          ? 'border-b-2 border-secondaryColor text-secondaryColor'
+                          ? 'border-b-2 border-text-color'
                           : 'text-skyColor',
-                        'pb-1 text-lg hover:text-secondaryColor',
+                        'pb-1 text-lg hover:',
                       )}
                       aria-current={item.current ? 'page' : undefined}
                     >
@@ -80,17 +80,17 @@ const Nav = () => {
           </ul>
         </div>
       </nav>
-      <a href={CV} download className={`self-center ${mobileMenu ? 'block' : 'hidden'} md:block btn:hover btn-primary`}>
+      <a href={CV} download className={`self-center ${mobileMenu ? 'block' : 'hidden'} md:block btn:hover`}>
       <button
           onClick={() => setMobileMenu(false)}
           type="button"
-          className={`border-2 border-secondaryColor mt-24 rounded px-4 py-1 w-32 
-         text-secondaryColor hover:text-skyColor hover:border-skyColor md:mt-0`}
+          className={`border-2 mt-24 rounded px-4 py-1 w-32 
+          hover:text-skyColor md:mt-0`}
         >
-          Resume
+          Resume 
         </button>
       </a>
-    </header>
+    </nav>
   );
 };
 

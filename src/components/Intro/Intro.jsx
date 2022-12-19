@@ -1,7 +1,7 @@
 import { CheckCircleIcon } from '@heroicons/react/solid';
-import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import profilePicture from '../../assets/images/profile.jpg';
+import Icons from './Icons';
 
 const fields = ['Full Stack web developer', 'Love for clean code', 'Technical Writter', 'Football Lover'];
 
@@ -12,12 +12,13 @@ const Intro = () => (
     transition={{ duration: 1 }}
     className="flex flex-col items-center gap-10 md:flex-row md:gap-60"
   >
+    <Icons /> 
     <div className="md:order-1">
       <img src={profilePicture} alt="profile" className="h-64 md:h-80 rounded-full" />
-    </div>
-    <div className="text-skyColor">
-      <h5 className="">Hello!</h5>
-      <h1 className="text-2xl md:text-5xl">I&apos;m E.O Ojesanmi</h1>
+    </div> 
+    <div className="">
+      <h5 className="text-color">Hello!</h5>
+      <h1 className="text-color text-2xl md:text-5xl">I&apos;m E.O Ojesanmi</h1>
       {
           fields.map((field) => (
             <div key={field} className="flex gap-4 mt-3">

@@ -14,6 +14,7 @@ function App() {
     <>
       <Nav />
       <div className="">
+       
         <Routes>
           {/* <Route
             path="*"
@@ -45,6 +46,7 @@ function App() {
             element={(<Testimonial />)}
           />
         </Routes>
+        <Footer />
       </div>
     </>
   );
