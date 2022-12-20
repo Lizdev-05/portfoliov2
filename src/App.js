@@ -60,7 +60,7 @@ function App() {
       <Nav />
       <Home />
       <About />
-      <Skills />
+      {/* <Skills /> */}
       <Projects />
       <Testimonial />
       <Contact />

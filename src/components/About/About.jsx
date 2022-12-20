@@ -28,6 +28,11 @@ const About = () => {
               <small>25+ completed projects</small>
             </article>
            </div>
+           <p>I am a Full-Stack Developer who enjoys building rich interactive websites with hands-on experience working
+             on a team remotely with little or no supervision and I am also capable of 
+             learning new concepts quickly and efficiently.
+              </p>
+              <a href="#contact" className='btn btn-primary'>Let's talk</a>
         </div>
       </div>
     </section>
