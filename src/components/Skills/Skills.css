@@ -38,3 +38,33 @@
     margin-top: 6px;
     color: var(--color-primary);
 }
+
+/* ===============================  MEDIA QUERY (MEDIUM DEVICES) ========================== */
+@media screen and (max-width: 1024px) {
+    .skillsContainer{
+       grid-template-columns: 1fr;
+    }
+
+    .skillsContainer > div {
+        width: 80%;
+        padding: 2rem;
+        margin: 0 auto;
+    }
+
+    .skillsContent{
+        padding: 1rem;
+    }
+  }
+  
+  /* ===============================  MEDIA QUERY (SMALL DEVICES) ========================== */
+  @media screen and (max-width: 600px) {
+    .skillsContainer{
+        gap: 1rem;
+    }
+
+    .skillsContainer > div {
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+  }
+  
