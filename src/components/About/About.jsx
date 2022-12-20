@@ -1,29 +1,30 @@
 import React from 'react';
-import ME from '../../assets/images/me.png';
+import ME from '../../assets/images/mee.jpg';
 import {FiAward} from 'react-icons/fi'
 import {VscFolder} from 'react-icons/vsc'
+import './About.css'
 
 const About = () => {
   return (
-    <section id='about'>
+    <section id='about'>  
       <h5>Happy to have you here</h5>
       <h2>About Me</h2>
 
-      <div className="container">
+      <div className="container aboutContainer">
+      <div className="aboutMe">
         <div className="meImg">
           <img src={ME} alt="Oyinlade" />
         </div>
+      </div>
         <div className="meContent">
            <div className="aboutCards">
             <article className="aboutCard">
-              <FiAward />
+              <FiAward className='aboutIcon'/>
               <h5>Experience</h5>
               <small>2+ years working experience</small>
             </article>
-           </div>
-           <div className="aboutCards">
             <article className="aboutCard">
-              <VscFolder />
+              <VscFolder className='aboutIcon'/>
               <h5>Projects</h5>
               <small>25+ completed projects</small>
             </article>
@@ -34,7 +35,7 @@ const About = () => {
               </p>
               <a href="#contact" className='btn btn-primary'>Let's talk</a>
         </div>
-      </div>
+   </div>
     </section>
   )
 }
