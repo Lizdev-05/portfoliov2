@@ -29,3 +29,19 @@
 }
 
 
+/* ===============================  MEDIA QUERY (MEDIUM DEVICES) ========================== */
+@media screen and (max-width: 1024px) {
+    .portfolioContainer{
+     grid-template-columns: 1fr 1fr;
+     gap: 1.2rem;
+    }
+   }
+   
+   /* ===============================  MEDIA QUERY (SMALL DEVICES) ========================== */
+   @media screen and (max-width: 600px) {
+    .portfolioContainer{
+     grid-template-columns: 1fr;
+     gap: 1rem;
+    }
+   }
+   
