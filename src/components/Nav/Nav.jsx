@@ -61,10 +61,11 @@ const Nav = () => {
           <ul className="flex flex-col gap-8 items-center mt-24 md:flex-row md:mt-1">
             <li><a href="#" onClick={() => setActivenav('#')} className={activeNav === '#' ? 'active' : ''}>Home</a></li>
             <li><a href="#about"  onClick={() => setActivenav('#about')} className={activeNav === '#about' ? 'active' : ''}>About</a></li>
+            <li><a href="#skills"  onClick={() => setActivenav('#skills')} className={activeNav === '#skills' ? 'active' : ''}>Skills</a></li>
             <li><a href="#project"  onClick={() => setActivenav('#project')} className={activeNav === '#project' ? 'active' : ''}>Project</a></li>
             <li><a href="#contact"  onClick={() => setActivenav('#contact')} className={activeNav === '#contact' ? 'active' : ''}>Contact</a></li>
             <li><a href="#blog"  onClick={() => setActivenav('#blog')} className={activeNav === '#blog' ? 'active' : ''}>Blog</a></li>
-            <li><a href="#testimonial"  onClick={() => setActivenav('#testimonial')} className={activeNav === '#testimonial' ? 'active' : ''}>Testimonial</a></li>
+           
 
 
 
