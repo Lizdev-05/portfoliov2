@@ -9,20 +9,9 @@
   gap: 1rem;
 }
 
-/* .header_socials::after{
-    content: '';
-    width: 22px;
-    height: 2rem;
-    background: var(--color-primary);
-} */
-
 /* ===============================  MEDIA QUERY (SMALL DEVICES) ========================== */
 @media screen and (max-width: 800px) {
   .header_socials {
     display: none;
-
-    /* flex-direction: column;
-        gap: 0.8rem;
-        right: 1rem; */
   }
 }

@@ -6,7 +6,6 @@ import Icons from './Icons';
 const fields = ['Full Stack web developer', 'Love for clean code', 'Technical Writter', 'Football Lover'];
 
 const Intro = () => (
-  <section>
   <motion.div
     initial={{ x: '-100vw' }}
     animate={{ x: -0 }}
@@ -34,7 +33,6 @@ const Intro = () => (
        </a>
       </div>
       </motion.div>
-      </section>
 );
 
 export default Intro;
