@@ -64,7 +64,6 @@ function App() {
       <Projects />
       <Testimonial />
       <Contact />
-      <Contact />
       <Footer />
     </>
   );
