@@ -10,7 +10,7 @@ const Intro = () => (
     initial={{ x: '-100vw' }}
     animate={{ x: -0 }}
     transition={{ duration: 1 }}
-    className="container motion"
+    className="motion"
   >
     <Icons /> 
     <div className="md:order-1">
