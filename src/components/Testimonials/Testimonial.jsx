@@ -1,7 +1,4 @@
 import React from 'react';
-import recommendation from '../../db/Feedback';
-import './Testimonial.css';
-
 // import Swiper core and required modules
 import { Pagination } from 'swiper';
 
@@ -10,6 +7,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
+
+import recommendation from '../../db/Feedback';
+import './Testimonial.css';
+
 
 const Testimonial = () => {
   return (
