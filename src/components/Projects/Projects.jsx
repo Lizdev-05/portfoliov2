@@ -2,14 +2,10 @@ import React from 'react';
 import data from '../../db/Data';
 import './Projects.css'
 
-{/* <div className="portfolio__item-content">
-<h3>{pro.title}</h3>
-<p>{pro.description}</p>
-<p>{pro.technologies}</p>
-</div> */}
+
 const Projects = () => {
   return (
-    <section id='#project'>
+    <section id='project'>
       <h5>My Recent Works</h5>
       <h2>Projects</h2>
       

@@ -13,7 +13,7 @@ import 'swiper/css/pagination';
 
 const Testimonial = () => {
   return (
-    <section id='#testimonial'>
+    <section id='testimonial'>
       <h5>Feedback from peopele I have worked remotely with</h5>
       <h2>Testimonials</h2>
 
