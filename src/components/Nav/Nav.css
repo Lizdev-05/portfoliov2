@@ -1,4 +1,4 @@
-nav a.active{
-    background: var(--color-bg);
-    color: var(--color-white);
+nav a.active {
+  background: var(--color-bg);
+  color: var(--color-white);
 }

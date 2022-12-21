@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { getFormKey } from "../../config/apiKeys";
+import getFormKey  from "../../config/apiKeys";
 
 const ContactForm = () => {
   const [name, setName] = useState("");

@@ -14,7 +14,7 @@ import Footer from './components/Footer/Footer';
 //     <>
 //       <Nav />
 //       <div className="">
-       
+
 //         <Routes>
 //           {/* <Route
 //             path="*"

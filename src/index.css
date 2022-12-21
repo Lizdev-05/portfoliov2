@@ -10,6 +10,10 @@
   text-decoration: none;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 :root {
   --color-bg: #012a4a;
   --color-bg-variant: #0b5295;
@@ -25,10 +29,6 @@
 
 html {
   scroll-behavior: smooth;
-}
-
-::-webkit-scrollbar {
-  display: none;
 }
 
 body {
@@ -58,7 +58,7 @@ h1 {
 }
 
 section {
-  margin-top: 8rem; 
+  margin-top: 8rem;
 }
 
 section > h2,
@@ -76,13 +76,15 @@ section > h2 {
   color: var(--color-light);
 }
 
-.text-white{
+.text-white {
   color: var(--color-white);
 }
-.text-color{
+
+.text-color {
   color: var(--color-primary);
   transition: var(--transition);
 }
+
 a {
   color: var(--color-primary);
   transition: var(--transition);
@@ -120,9 +122,10 @@ img {
   object-fit: cover;
 }
 
-.bg{
+.bg {
   background: var(--color-bg);
 }
+
 /* .mobile{
   display: flex;
   justify-content: space-between;

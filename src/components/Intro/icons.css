@@ -1,12 +1,12 @@
-.header_socials{
-    position: absolute;
-    right: 7rem;
-    bottom: 7rem;
-    /* font-size: 2rem; */
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+.header_socials {
+  position: absolute;
+  right: 7rem;
+  bottom: 7rem;
 
+  /* font-size: 2rem; */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 /* .header_socials::after{
@@ -15,13 +15,14 @@
     height: 2rem;
     background: var(--color-primary);
 } */
+
 /* ===============================  MEDIA QUERY (SMALL DEVICES) ========================== */
 @media screen and (max-width: 800px) {
-    .header_socials{
-        display: none;
+  .header_socials {
+    display: none;
+
     /* flex-direction: column;
         gap: 0.8rem;
         right: 1rem; */
-    }
   }
-  
+}
