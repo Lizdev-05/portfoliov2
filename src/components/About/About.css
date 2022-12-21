@@ -1,0 +1,114 @@
+.aboutContainer {
+  display: grid;
+  grid-template-columns: 35% 50%;
+  gap: 15%;
+}
+
+.aboutMe {
+  width: 100%;
+  /* stylelint-disable */
+  height: fit-content;
+  border-radius: 2rem;
+  background:
+    linear-gradient(
+      45deg,
+      transparent,
+      var(--color-primary),
+      transparent
+    );
+  display: grid;
+  place-items: center;
+}
+
+.meImg {
+  border-radius: 2rem;
+  overflow: hidden;
+  transform: rotate(10deg);
+  transition: var(--transition);
+}
+
+.meImg:hover {
+  transform: rotate(0);
+}
+
+.aboutCards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.aboutIcon {
+  text-align: center;
+  font-size: 1.4rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  color: var(--color-primary);
+}
+
+.aboutCard {
+  background: var(--color-bg-variant);
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.aboutCard:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: default;
+}
+
+.aboutCard h5 {
+  font-size: 0.95rem;
+}
+
+.aboutCard small {
+  font-size: 0.7rem;
+  color: var(--color--light);
+}
+
+.meContent p {
+  margin: 2rem 0 2.6rem;
+  color: var(--color--light);
+}
+
+
+/* ===============================  MEDIA QUERY (MEDIUM DEVICES) ========================== */
+@media screen and (max-width: 1024px) {
+  .aboutContainer {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .aboutMe {
+    width: 50%;
+    margin: 2rem auto 4rem;
+  }
+
+  .meContent p {
+    margin: 1rem 0 1.5rem;
+  }
+}
+
+/* ===============================  MEDIA QUERY (SMALL DEVICES) ========================== */
+@media screen and (max-width: 600px) {
+  .aboutMe {
+    width: 65%;
+    margin: 0 auto 3rem;
+  }
+
+  .aboutCard {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .meContent {
+    text-align: center;
+  }
+
+  .meContent p {
+    margin: 1.5rem 0;
+  }
+}

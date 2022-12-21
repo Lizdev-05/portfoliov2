@@ -1,0 +1,7 @@
+
+/* ===============================  MEDIA QUERY (big DEVICES) ========================== */
+@media screen and (min-width: 800px) {
+  .inner {
+    padding-left: 80px;
+  }
+}
