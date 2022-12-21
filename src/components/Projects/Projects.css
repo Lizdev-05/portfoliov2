@@ -20,8 +20,19 @@
 .portfolioItemsImage{
     border-radius: 1.5rem;
     overflow: hidden;
+    height: 40%;
 }
 
+.portfolioItems p{
+ 
+        margin: 0.5rem 0 1.2rem 0;
+        font-size: 0.8rem;
+  
+}
+
+.portfolioItemContent{
+    height: 45%;
+}
 .portfolioItemsCta{
     display: flex;
     gap: 1rem;
