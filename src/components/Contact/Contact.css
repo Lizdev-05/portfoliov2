@@ -72,7 +72,7 @@ textarea{
 
 /* ===============================  MEDIA QUERY (MEDIUM DEVICES) ========================== */
 @media screen and (max-width: 1024px) {
-    .container.contactContaainer{
+    .container.contactContainer{
         grid-template-columns: 1fr;
         gap: 2rem;
     }
@@ -80,7 +80,7 @@ textarea{
   
   /* ===============================  MEDIA QUERY (SMALL DEVICES) ========================== */
   @media screen and (max-width: 600px) {
-    .container.contactContaainer{
+    .container.contactContainer{
         grid-template-columns: 1fr;
        width: var(--container-width-sm);
     }
