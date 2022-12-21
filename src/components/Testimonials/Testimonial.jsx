@@ -1,5 +1,6 @@
 import React from 'react';
-import recommendation from '../../db/Feedback'
+import recommendation from '../../db/Feedback';
+import './Testimonial.css'
 
 const Testimonial = () => {
   return (
