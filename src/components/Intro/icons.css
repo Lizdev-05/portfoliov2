@@ -1,6 +1,6 @@
 .header_socials {
   position: absolute;
-  right: 7rem;
+  right: -7rem;
   bottom: 7rem;
 
   /* font-size: 2rem; */
@@ -9,9 +9,28 @@
   gap: 1rem;
 }
 
+.motion {
+  display: grid;
+  grid-template-columns: 50% 35%;
+  gap: 15%;
+}
+
+.introImg {
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  border: 0.4rem solid var(--color-primary-variant);
+}
+
 /* ===============================  MEDIA QUERY (SMALL DEVICES) ========================== */
 @media screen and (max-width: 800px) {
   .header_socials {
     display: none;
+  }
+
+  .motion {
+    grid-template-columns: 1fr;
+    gap: 0;
   }
 }
