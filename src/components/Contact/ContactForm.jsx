@@ -7,21 +7,9 @@ const ContactForm = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   
-//   const [messageError, setMessageError] = useState<boolean>(false);
   const [success, setSuccess] = useState(false);
 
  
-    // if (message.trim().length < 1) {
-    //   raiseError("Message cannot be blank");
-    //   setMessageError(true);
-    //   return;
-    // }
-
-    // if (message.length < 5) {
-    //   raiseError("The message is too short");
-    //   setMessageError(true);
-    //   return;
-    // }
 
   const handleSubmit = async (e) => {
     e.preventDefault();  
