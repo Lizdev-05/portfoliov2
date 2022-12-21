@@ -38,6 +38,12 @@ body {
   line-height: 1.7;
 }
 
+.mobile-btns {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
 /* --------------  GENERAL STYLES   ---------------- */
 .container {
   width: var(--container-width-lg);
