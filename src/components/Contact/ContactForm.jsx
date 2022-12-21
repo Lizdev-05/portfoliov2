@@ -1,14 +1,26 @@
 import React, { useState } from "react";
+import axios from "axios";
+import { getFormKey } from "../../config/apiKeys";
 
 const ContactForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = (e) =>{
-    e.preventDefault()
-    const submission = {name, email, message}
-  }
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const submission = { name, email, message };
+  console.log(submission);
+    const { data } = await axios.post(
+      `https://getform.io/f/${getFormKey}`,
+      submission,
+      { headers: { Accept: "application/json" } }
+    );
+    if(data.success){
+        
+    }
+    console.log(data);
+  };
 
   return (
     <form action="" onSubmit={handleSubmit}>
@@ -19,7 +31,7 @@ const ContactForm = () => {
         placeholder="Your Full Name"
         required
         onChange={(e) => {
-          setName(e.value);
+          setName(e.target.value);
         }}
       />
       <input
@@ -29,7 +41,7 @@ const ContactForm = () => {
         placeholder="Your Email"
         required
         onChange={(e) => {
-          setEmail(e.value);
+          setEmail(e.target.value);
         }}
       />
       <textarea
@@ -41,7 +53,7 @@ const ContactForm = () => {
         placeholder="Your Message"
         required
         onChange={(e) => {
-          setMessage(e.value);
+          setMessage(e.target.value);
         }}
       ></textarea>
       <button type="submit" className="btn btn-primary">
