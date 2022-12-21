@@ -10,15 +10,15 @@ const Intro = () => (
     initial={{ x: '-100vw' }}
     animate={{ x: -0 }}
     transition={{ duration: 1 }}
-    className="flex flex-col items-center gap-10 md:flex-row md:gap-60"
+    className="container motion"
   >
     <Icons /> 
     <div className="md:order-1">
-      <img src={profilePicture} alt="profile" className="h-64 md:h-80 rounded-full" />
+      <img src={profilePicture} alt="profile" className='introImg' />
     </div> 
     <div className="">
       <h5 className="text-color">Hello!</h5>
-      <h1 className="text-color text-2xl md:text-5xl">I&apos;m E.O Ojesanmi</h1>
+      <h1 className="text-color md:text-5xl">I&apos;m E.O Ojesanmi</h1>
       {
           fields.map((field) => (
             <div key={field} className="flex gap-4 mt-3">
