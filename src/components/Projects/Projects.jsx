@@ -1,5 +1,5 @@
 import React from 'react';
-import data from '../../db/Data';
+import { data }from '../../db/Data';
 import './Projects.css'
 
 {/* <div className="portfolio__item-content">
