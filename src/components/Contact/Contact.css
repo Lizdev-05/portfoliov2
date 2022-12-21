@@ -46,8 +46,6 @@
   font-weight: 500;
 }
 
-
-
 /* ==================== FORM =================== */
 
 form {
@@ -66,9 +64,6 @@ textarea {
   resize: none;
   color: var(--color-white);
 }
-
-
-
 
 /* ===============================  MEDIA QUERY (MEDIUM DEVICES) ========================== */
 @media screen and (max-width: 1024px) {
