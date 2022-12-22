@@ -1,22 +1,11 @@
 import React, { useState } from 'react';
 import { MenuIcon, XIcon } from '@heroicons/react/solid';
-// import { Link } from 'react-router-dom';
-// import { Routes, Route } from 'react-router';
 import CV from '../../assets/images/resume.pdf'
 import './Nav.css'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
-
-// const menuItems = [
-//   { name: 'Home', path: '/', current: true },
-//   { name: 'About', path: '#about', current: false },
-//   { name: 'Projects', path: '#projects', current: false },
-//   { name: 'Contact', path: '#contact', current: false },
-//   { name: 'Blog', path: '#blog', current: false },
-//   { name: 'Testimonials', path: '#testimonials', current: false },
-// ];
 
 const Nav = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -51,11 +40,7 @@ const Nav = () => {
             <li><a href="#skills" onClick={() => setActivenav('#skills')} className={activeNav === '#skills' ? 'active' : ''}>Skills</a></li>
             <li><a href="#project" onClick={() => setActivenav('#project')} className={activeNav === '#project' ? 'active' : ''}>Project</a></li>
             <li><a href="#contact" onClick={() => setActivenav('#contact')} className={activeNav === '#contact' ? 'active' : ''}>Contact</a></li>
-            <li><a href="#blog" onClick={() => setActivenav('#blog')} className={activeNav === '#blog' ? 'active' : ''}>Blog</a></li>
            
-
-
-
           </ul>
         </div>
       </nav>
