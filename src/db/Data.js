@@ -46,7 +46,7 @@ const data = [
     title: 'The Book Store App',
     description: 'The Bookstore is a website where the user can display a list of books, add a book by providing a title, an author,category and remove a selected book.',
     image: IMG5,
-    live: 'https://lizdev-book-store.netlify.app/',
+    live: 'https://lizdev-book-store.netlify.app/', 
     source: 'https://github.com/Lizdev-05/book-store',
   },
 
