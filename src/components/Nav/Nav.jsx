@@ -11,17 +11,23 @@ const Nav = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
   const [activeNav, setActivenav] = useState('#')
 
+  const setNav = (activeNavBar) => {
+    setMobileMenu(false)
+    setActivenav(activeNavBar)
+
+  }
+
   return (
     <nav
-    className={`bg flex flex-col z-10 px-8 py-7 ${mobileMenu ? 'h-screen ' : 'h-fit'} fixed top-0 w-full shadow-xl md:flex-row md:justify-between md:px-20 md:h-fit`}
+    className={`flex flex-col z-10 bg px-8 py-7 ${mobileMenu ? 'h-screen ' : 'h-fit'} fixed top-0 w-full shadow-xl md:flex-row md:justify-between md:px-20 md:h-fit`}
     >
 
-      <a className="text-xl">
+      <a href='#' className="text-xl">
         <span className="">Liz</span>
         <span className="text-white">dev</span>
       </a>
       <nav>
-        <div className=" md:hidden mobile-btns">
+        <div className="md:hidden mobile-btns">
           <button
             type="button"
             className={classNames(!mobileMenu ? 'block' : 'hidden')}
@@ -35,11 +41,11 @@ const Nav = () => {
         </div>
         <div className={classNames(mobileMenu ? 'block' : 'hidden', 'md:block')}>
           <ul className="flex flex-col gap-8 items-center mt-24 md:flex-row md:mt-1">
-            <li><a href="#" onClick={() => setActivenav('#')} className={activeNav === '#' ? 'active' : ''}>Home</a></li>
-            <li><a href="#about" onClick={() => setActivenav('#about')} className={activeNav === '#about' ? 'active' : ''}>About</a></li>
-            <li><a href="#skills" onClick={() => setActivenav('#skills')} className={activeNav === '#skills' ? 'active' : ''}>Skills</a></li>
-            <li><a href="#project" onClick={() => setActivenav('#project')} className={activeNav === '#project' ? 'active' : ''}>Project</a></li>
-            <li><a href="#contact" onClick={() => setActivenav('#contact')} className={activeNav === '#contact' ? 'active' : ''}>Contact</a></li>
+            <li><a href="#" onClick={() => setNav('#')} className={activeNav === '#' ? 'active' : ''}>Home</a></li>
+            <li><a href="#about" onClick={() => setNav('#about')} className={activeNav === '#about' ? 'active' : ''}>About</a></li>
+            <li><a href="#skills" onClick={() => setNav('#skills')} className={activeNav === '#skills' ? 'active' : ''}>Skills</a></li>
+            <li><a href="#project" onClick={() => setNav('#project')} className={activeNav === '#project' ? 'active' : ''}>Project</a></li>
+            <li><a href="#contact" onClick={() => setNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}>Contact</a></li>
            
           </ul>
         </div>
