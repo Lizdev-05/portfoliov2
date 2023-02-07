@@ -43,7 +43,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Coming Soon]()
+- [Lizdev Portfolio](https://lizdev.tech/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -97,7 +97,6 @@ You can deploy this project using:
 
 - GitHub: [@githubhandle](https://github.com/Lizdev-05)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/elizabeth-oyinlade-ojesanmi-0702aa16a)
-
 
 ## 🔭 Future Features <a name="future-features"></a>
 
