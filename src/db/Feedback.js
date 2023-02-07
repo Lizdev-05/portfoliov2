@@ -32,7 +32,7 @@ const recommendation = [
   },
   {
     id: 4,
-    text: "Elizabeth’s willingness to go above and beyond while executing a task is worthy of emulation. Her dexterity, poise, energy and resourcefulness in and out of her role as a fellow with us is admirable. Put her behind a system to code, she is good to go. Put her before her peers to solve problems, she will do just fine",
+    text: "Elizabeth’s willingness to go above and beyond while executing a task is worthy of emulation. Her dexterity, poise, energy and resourcefulness in and out of her role as a fellow with us is admirable. Put her behind a system to code,or before her peers to solve problems, she will do just fine",
     image: IMG10,
     name: "Shamsudeen Aderoju",
     location: "Abuja, Nigeria",
@@ -60,7 +60,7 @@ const recommendation = [
   },
   {
     id: 8,
-    text: "Elizabeth is one of the best and most courageous person I’ve ever met; I’ve had the opportunity to work with her several times and found her to be a great collaborator as well. She’s relentless on any task she decides to work on. I strongly recommend her for any organization because I have strong faith in her abilities.",
+    text: "Elizabeth is one of the best and most courageous person I’ve ever met; I’ve had the opportunity to work with her several times and found her to be a great collaborator. She’s relentless on any task she decides to work on. I strongly recommend her for any organization because I have strong faith in her abilities.",
     image: IMG14,
     name: "Rahman",
     location: "Lagos Nigeria",
