@@ -1,8 +1,8 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 Portfolio ](#-Personal Portfolio--)
-  - [Backend](#backend)
+- [📖 Portfolio ](#-Personal Portfolio-)
+
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
