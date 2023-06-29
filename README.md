@@ -1,7 +1,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 Portfolio ](#-Personal Portfolio-)
+- [📖 Portfolio ](#-Personal-Portfolio)
 
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
