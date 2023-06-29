@@ -1,7 +1,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 Exotic Rentals ](#-exotic-rentals--)
+- [📖 Portfolio ](#-Personal Portfolio--)
   - [Backend](#backend)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
