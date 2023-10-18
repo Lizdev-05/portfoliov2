@@ -27,7 +27,7 @@ const Intro = () => (
             </div>
           ))
         }
-        <a href="/contact" className="btn btn-primary btn:hover mt-10 rounded px-6 py-2 w-50
+        <a href="#contact" className="btn btn-primary btn:hover mt-10 rounded px-6 py-2 w-50
           text-lg font-medium"> 
           Get in Touch
        </a>
