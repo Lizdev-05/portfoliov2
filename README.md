@@ -43,7 +43,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Lizdev Portfolio](https://lizdev.tech/)
+- [Lizdev Portfolio](https://lizdev-portforlio.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
